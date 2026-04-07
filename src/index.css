@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+/* @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css"); */
+
+
+
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+
+html{
+  overflow: hidden;
+}
+/* CSS Document */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin:0; padding:0; border:0;line-height:100%;outline:0;box-sizing:border-box; font-size:inherit;
+
+  letter-spacing: -0.05rem !important;
+}
+/* HTML5 display-role reset for older browsers */
+article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary { display: block;}
+audio,canvas,progress,video {display: inline-block;vertical-align: top;}
+audio:not([controls]) {display: none;height: 0}
+[hidden],template {display: none}
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+table {border-collapse: collapse;border-spacing: 0;width:100%;}
+a {color:inherit;}
+a, a:hover, a:active, a:focus {text-decoration: none;}
+abbr[title] {border-bottom: 1px dotted}
+em, address { font-style: normal;}
+small {font-size: 80%}
+img {vertical-align:top;}
+hr,legend,caption {margin: 0; padding: 0; width: 100%; height: 0; line-height: 0; font-size: 0; color: transparent;border: none; overflow: hidden;}
+pre {overflow: auto}
+button {border:0 none;font-family: 'Pretendard';cursor:pointer;display:inline-block;height:32px;background-color:transparent}
+
+html, body {font-family: 'Pretendard','돋움',Dotum,'굴림',Gulim,Helvetica,sans-serif,verdana !important;color:#333;font-size:16px;line-height:100%;letter-spacing:-0.05rem;zoom:1;font-weight:500}
+
+
+.wd10 {width:10% !important}.wd20 {width:20% !important}.wd25 {width:25% !important}.wd30 {width:30% !important}.wd40 {width:40% !important}.wd50 {width:50% !important}.wd60 {width:60% !important}.wd70 {width:70% !important}.wd80 {width:80% !important}.wd90 {width:90% !important}.wd100 {width:100% !important}
+.t_l {text-align:left !important}
+.t_r {text-align:right !important}
+.mt16 {margin-top:16px}
+.mr25 {margin-right:25px}
+
+.toast_wrap {min-width:200px;height:50px;background-color:rgba(0,0,0,0.9);border-radius:14px;padding:15px;color:#fff;font-size:16px;display:flex;flex-direction: row;justify-content:space-between;align-items:center}
+.toast_wrap > button > img {width:14px;height:14px}
+
+/*레이아웃*/
+#wrap {
+	display:flex;
+	flex-direction:row;
+	width:100%;
+	height:100vh;
+    position:relative;
+}
+#header {
+  /* min-width: 1680px; */
+	display:flex;
+	width:100%;
+	height:52px;
+	position:fixed;
+    z-index:1;
+    background-color:rgba(0,0,0,0.48)
+}
+#container {
+	display:flex;
+	width:100%;
+	height:100%;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#footer {
+	display:none;
+}
+
+.contents {
+	display:flex;
+	flex-direction:column;
+}
+svg {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  
+  /* 외곽선 제거를 위한 추가 속성들 */
+  outline: none !important;
+  border: none !important;
+  -webkit-focus-ring-color: transparent !important;
+  
+  /* Firefox에서의 외곽선 제거 */
+  -moz-focus-outer: none;
+  
+  /* IE에서의 외곽선 제거 */
+  -ms-focus-ring-color: transparent;
+}
+
+/* focus, active 상태에서도 외곽선 제거 */
+g, path {
+  outline: none !important;
+  border: none !important;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/*select*/
+select {
+    /* -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; */
+    display: inline-block;
+	  border:0 none;
+    border-radius: 6px;
+    width: 100%;
+    height:32px;
+    padding-right:25px;
+    /* background:#fff url(./assets/images/select_arrow.svg) no-repeat right 11px top 50%/10px 8px; */
+}
+
+/*스크롤바*/
+/* ::-webkit-scrollbar {
+  width: 6px;
+	height:6px;
+} */
+
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb { 
+    background-color: rgba(0,0,0,0.2);
+}
+::-webkit-scrollbar-button {
+    display: none;
+}
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+}
+::-webkit-scrollbar-horizontal {
+  height:6px;
+}
+
+
+
+
+
+
+/* :root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+} */
+
+a {
+  font-weight: 500;
+  color: #64f5ff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+html{
+	height: 100%;
+}
+/* body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+} */
+
+body{
+	height: 100%;
+}
+#root{
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	/* font-family: 'League Spartan', sans-serif; */
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+#main{
+  width: 100%; height: 100%;
+}
+
+ /* 
+ 	한글 범위:  U+AC00-D7A3
+	영어 대문자 범위 :  U+0041-005A
+	영어 소문자 범위 :   U+0061-007A
+	숫자 범위 : U+0030-0039
+	특수 문자: U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E\
+ */
+
+@font-face {
+	font-family: title;
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/MICEGothic Bold.woff2') format('woff2');
+	/* font-weight: 700; */
+	font-style: normal;
+	
+}
+
+
+@font-face {
+	font-family: title;
+	font-style: normal;
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+	/* font-weight: 900; */
+	unicode-range: U+0041-005A, U+0061-007A;
+}
+
+/* 기본 */
+@font-face {
+  font-family: "contentFont";
+  src: url("https://fonts.gstatic.com/s/roboto/v30/KFOkCnqEu92Fr1MmgVxFIzIFKw.woff2") format('woff2');
+  font-style: normal;
+	font-weight: 400;
+	
+}
+
+/* 영어 */
+@font-face {
+  font-family: contentFont;
+  src: url("https://fonts.gstatic.com/s/roboto/v30/KFOkCnqEu92Fr1MmgVxFIzIFKw.woff2") format('woff2');
+  
+  unicode-range: U+0041-005A, U+0061-007A;
+}
+
+/* 숫자 */
+@font-face {
+  font-family: contentFont;
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/MICEGothic Bold.woff2') format('woff2');
+  font-style: normal;
+	font-weight: 700;
+
+	
+	
+  unicode-range: U+0030-0039;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  src: url("https://fonts.gstatic.com/s/roboto/v30/KFOkCnqEu92Fr1MmgVxFIzIFKw.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+/* @font-face {
+	font-family: title;
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+	font-weight: 900;
+	font-style: normal;
+	
+} */
+
+/* @font-face {
+	font-family: "title";
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+} */
+
+
+@font-face {
+	font-family: 'GmarketSansMedium';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* 
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+} */
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+
+
+
+
+
+

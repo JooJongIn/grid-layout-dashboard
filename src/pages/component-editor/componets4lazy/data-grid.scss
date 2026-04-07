@@ -1,0 +1,149 @@
+.custom-data-grid{
+
+    .dx-datagrid {
+        // 데이터 그리드의 기본 클래스
+        background-color: red;
+    }
+    
+    .dx-gridbase-container {
+        // 데이터 그리드의 기본 컨테이너
+    }
+    
+    .dx-hidden {
+        // 숨겨진 요소를 나타내는 클래스
+    }
+    
+    .dx-datagrid-header-panel {
+        // 데이터 그리드의 헤더 패널
+    }
+    
+    .dx-toolbar {
+        // 툴바를 정의하는 클래스
+        background-color: blue;
+    }
+    
+    .dx-widget {
+        // devextreme의 위젯을 나타내는 기본 클래스
+    }
+    
+    .dx-visibility-change-handler {
+        // 요소의 가시성 변화를 처리하는 클래스
+    }
+    
+    .dx-collection {
+        // 여러 요소를 포함하는 컬렉션을 나타내는 클래스
+    }
+    
+    .dx-toolbar-items-container {
+        // 툴바 내의 아이템을 포함하는 컨테이너
+    }
+    
+    .dx-toolbar-before {
+        // 툴바의 왼쪽 부분에 위치하는 아이템
+    }
+    
+    .dx-toolbar-center {
+        // 툴바의 중앙에 위치하는 아이템
+    }
+    
+    .dx-toolbar-after {
+        // 툴바의 오른쪽 부분에 위치하는 아이템
+    }
+    
+    .dx-item {
+        // 툴바의 개별 아이템
+    }
+    
+    .dx-toolbar-item {
+        // 툴바 내의 개별 아이템
+    }
+    
+    .dx-toolbar-button {
+        // 툴바 내의 버튼
+    }
+    
+    .dx-item-content {
+        // 툴바 아이템의 내용을 포함하는 클래스
+    }
+    
+    .dx-datagrid-search-panel {
+        // 데이터 그리드의 검색 패널
+    }
+    
+    .dx-textbox {
+        // 텍스트 입력 필드를 정의하는 클래스
+    }
+    
+    .dx-texteditor {
+        // 텍스트 편집기 위젯을 나타내는 클래스
+    }
+    
+    .dx-editor-outlined {
+        // 외곽선 스타일의 텍스트 편집기를 정의하는 클래스
+    }
+    
+    .dx-searchbox {
+        // 검색 기능을 제공하는 입력 필드
+    }
+    
+    .dx-show-clear-button {
+        // 입력 필드에 클리어 버튼을 표시하는 클래스
+    }
+    
+    .dx-texteditor-empty {
+        // 비어 있는 텍스트 편집기를 나타내는 클래스
+    }
+    
+    .dx-datagrid-headers {
+        // 데이터 그리드의 헤더를 정의하는 클래스
+    }
+    
+    .dx-datagrid-nowrap {
+        // 텍스트가 줄 바꿈되지 않도록 설정하는 클래스
+    }
+    
+    .dx-datagrid-content {
+        // 데이터 그리드의 콘텐츠 영역을 정의하는 클래스
+    }
+    
+    .dx-datagrid-table {
+        // 데이터 그리드의 테이블을 정의하는 클래스
+    }
+
+    // dx-row dx-data-row dx-column-lines 
+
+    .dx-row {
+        // 데이터 그리드의 각 행을 정의하는 클래스
+        background-color: chocolate;
+    }
+
+    .dx-row-alt{
+        background-color: green;
+    }
+    
+    .dx-data-row {
+        // 데이터가 포함된 행을 정의하는 클래스
+        background-color: chocolate;
+    }
+
+    .dx-column-lines {
+        background-color: black;
+    }
+    
+    .dx-column-lines {
+        // 열 경계를 표시하는 클래스
+    }
+    
+    .dx-header-row {
+        // 데이터 그리드의 헤더 행을 정의하는 클래스
+    }
+    
+    .dx-freespace-row {
+        // 자유 공간 행을 정의하는 클래스
+    }
+    
+    .dx-state-invisible {
+        // 요소가 보이지 않도록 설정하는 클래스
+    }
+        
+}

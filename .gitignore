@@ -1,0 +1,51 @@
+# deps · build
+node_modules
+dist
+dist-ssr
+
+# env
+.env
+.env.*
+!.env.example
+
+# logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# editor
+.vscode/*
+!.vscode/extensions.json
+.idea
+
+# os
+.DS_Store
+Thumbs.db
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# AI · 에디터 로컬 (규칙만 공유하려면 .cursor/rules/ 아래에 두고 커밋)
+.claude/
+.cursor/*
+!.cursor/rules/
+.kiro/
+
+# 이 프로젝트
+origin
+*.local
+
+# 로컬 전용 메모 — 원격 저장소에 커밋하지 않음
+/CODE_HIDING.md
+
+# hide-code 원본 JSX → 동일 경로 .js만 커밋
+/src/store.jsx
+/src/hook/**/*.jsx
+/src/pages/dashboard/card/card.jsx
+/src/pages/dashboard/card/content.jsx

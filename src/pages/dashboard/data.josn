@@ -1,0 +1,93 @@
+{
+    "List":{
+        data:[
+            {
+                val1: "value1",
+                val2: "value2",
+                val3: "value3"
+            },
+            {
+                val1: "value1",
+                val2: "value2",
+                val3: "value3"
+            },
+            ...
+        ],
+        
+        dataHeader:{head1: "name", head2: "birth", head3: "number"}
+    },
+    Chart:{
+        data:[
+            {
+                label: "12/10",
+                val1: 30,
+                val2: 25
+            },
+            {
+                label: "12/11",
+                val1: 11,
+                val2: 40
+            },
+            ...
+        ]
+    },
+    Chart(pie){
+        data:[
+            {
+                "subject": "Phishing",
+                "val1": 85,
+                "val2": 99,
+            },
+            {
+                "subject": "Malware", // label
+                "val1": 50,
+                "val2": 25,
+            },
+            ...
+        ]
+    },
+    Chart(radar){
+        data:[
+            {
+                "subject": "Phishing", // label
+                "val1": 85,
+                "val2": 99,
+                "domain": [ 0, 150 ] //최대 최소
+            },
+            {
+                "subject": "Malware",
+                "val1": 50,
+                "val2": 25,
+                "domain": [ 0, 150 ] 
+            },
+            ...
+        ]
+    },
+    Number(gauge):{
+        data: {
+            val : 30
+        }
+    },
+    divider(arc):{
+        data: {
+            "val1": 100, // 두수중 작은수 비교
+            "val2": 88,
+            "color": 색깔, // 커스텀 색 
+            "status": "위험" // 커스텀 스트링
+        }
+        
+    },
+    divider(분수):{
+        data: {
+            "key1": 100, // 두수중 작은수 비교
+            "key2": 88,
+        }
+    },
+    Status:{
+        data:{
+            "val1" : 1-5, // 등급
+            statusText : "위험" // 커스텀 텍스트
+        }
+    }
+
+}

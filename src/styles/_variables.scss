@@ -1,0 +1,33 @@
+// Theme colors
+$light-background: #ffffff;
+$light-foreground: #1a202c;
+$dark-background: #1a202c;
+$dark-foreground: #ffffff;
+
+// Chart colors
+$chart-colors: (
+  1: #3182ce,
+  2: #38a169,
+  3: #d69e2e,
+  4: #e53e3e,
+  5: #805ad5,
+  6: #d53f8c
+);
+
+// Mixins
+@mixin theme-aware($property, $light-value, $dark-value) {
+  #{$property}: $light-value;
+  .dark & {
+    #{$property}: $dark-value;
+  }
+}
+
+@mixin mode-aware($property, $dash-value, $pdf-value) {
+  .dash & {
+    #{$property}: $dash-value;
+  }
+  .pdf & {
+    #{$property}: $pdf-value;
+  }
+}
+

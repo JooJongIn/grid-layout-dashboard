@@ -1,0 +1,418 @@
+.custom-data-grid{
+    font-size: 16px !important;
+    height: 100%;  // 최상위 컨테이너에도 height 100% 추가
+
+    font-family: 'Pretendard';
+    // font-family: content;
+    .dx-datagrid {
+        // 데이터 그리드의 기본 클래스
+        height: 100%;
+        background-color: transparent;
+        // border-bottom: 1px solid rgba(255, 255, 255, 0.4) !important;  // 테이블 하단 선 추가
+    }
+    
+    .dx-gridbase-container {
+        // 데이터 그리드의 기본 컨테이너
+    }
+    
+    .dx-hidden {
+        // 숨겨진 요소를 나타내는 클래스
+    }
+    
+    .dx-datagrid-header-panel {
+        // 데이터 그리드의 헤더 패널
+    }
+    
+    .dx-toolbar {
+        // 툴바를 정의하는 클래스
+        background-color: transparent;
+    }
+    
+    .dx-widget {
+        // devextreme의 위젯을 나타내는 기본 클래스
+    }
+    
+    .dx-visibility-change-handler {
+        // 요소의 가시성 변화를 처리하는 클래스
+    }
+    
+    .dx-collection {
+        // 여러 요소를 포함하는 컬렉션을 나타내는 클래스
+    }
+    
+    .dx-toolbar-items-container {
+        // 툴바 내의 아이템을 포함하는 컨테이너
+    }
+    
+    .dx-toolbar-before {
+        // 툴바의 왼쪽 부분에 위치하는 아이템
+    }
+    
+    .dx-toolbar-center {
+        // 툴바의 중앙에 위치하는 아이템
+    }
+    
+    .dx-toolbar-after {
+        // 툴바의 오른쪽 부분에 위치하는 아이템
+    }
+    
+    .dx-item {
+        // 툴바의 개별 아이템
+    }
+    
+    .dx-toolbar-item {
+        // 툴바 내의 개별 아이템
+    }
+    
+    .dx-toolbar-button {
+        // 툴바 내의 버튼
+    }
+    
+    .dx-item-content {
+        // 툴바 아이템의 내용을 포함하는 클래스
+    }
+    
+    .dx-datagrid-search-panel {
+        height: 32px !important;
+        background: transparent !important;  // 전체 배경색 제거
+        
+        &.dx-editor-outlined {
+            border: none !important;
+            border-bottom: 1px solid #ddd !important;
+            border-radius: 0 !important;
+            background-color: transparent !important;  // 배경색 제거
+            
+            &:hover, &:focus-within {
+                border-bottom: 1px solid #666 !important;
+                background-color: transparent !important;  // 호버 시에도 배경색 제거
+            }
+        }
+        
+        .dx-texteditor-container {
+            background: transparent !important;  // 컨테이너 배경색 제거
+        }
+        
+        .dx-texteditor-input-container {
+            background: transparent !important;  // 입력 컨테이너 배경색 제거
+            
+            .dx-texteditor-input {
+                height: 30px !important;
+                line-height: 30px !important;
+                padding: 6px 6px 6px;
+                padding-left: 34px;
+                min-height: 0;
+                background: transparent !important;  // 입력 필드 배경색 제거
+            }
+        }
+        
+        .dx-icon {
+            font-size: 14px !important;
+            line-height: 18px !important;
+            height: 32px !important;
+        }
+
+        .dx-icon-search {
+            padding: 8px !important;
+        }
+
+        .dx-clear-button-area {
+            height: 30px !important;
+            width: 30px !important;
+            line-height: 30px !important;
+        }
+        
+        .dx-state-focused {
+            box-shadow: none !important;
+        }
+    }
+    
+    .dx-textbox {
+        // 텍스트 입력 필드를 정의하는 클래스
+    }
+    
+    .dx-texteditor {
+        // 텍스트 편집기 위젯을 나타내는 클래스
+    }
+    
+    .dx-editor-outlined {
+        // 외곽선 스타일의 텍스트 편집기를 정의하는 클래스
+    }
+    
+    .dx-searchbox {
+        // 검색 기능을 제공하는 입력 필드
+    }
+    
+    .dx-show-clear-button {
+        // 입력 필드에 클리어 버튼을 표시하는 클래스
+    }
+    
+    .dx-texteditor-empty {
+        // 비어 있는 텍스트 편집기를 나타내는 클래스
+    }
+    
+    .dx-datagrid-headers {
+        // 데이터 그리드의 헤더를 정의하는 클래스
+
+    }
+    
+    .dx-datagrid-nowrap {
+        // 텍스트가 줄 바꿈되지 않도록 설정하는 클래스
+    }
+    
+    .dx-datagrid-content {
+        // 데이터 그리드의 콘텐츠 영역을 정의하는 클래스
+    }
+    
+    .dx-datagrid-table {
+        // 데이터 그리드의 테이블을 정의하는 클래스
+    }
+
+    // dx-row dx-data-row dx-column-lines 
+
+    .dx-row {
+        // 데이터 그리드의 각 행을 정의하는 클래스
+    }
+
+    .dx-row-alt{
+        
+    }
+    .dx-row-alt > td {
+        // background-color: transparent !important;
+    }
+    
+    .dx-data-row {
+        // 데이터가 포함된 행을 정의하는 클래스
+    }
+
+    .dx-column-lines {
+
+    }
+    
+    .dx-column-lines {
+        // 열 경계를 표시하는 클래스
+    }
+    
+    .dx-header-row {
+        // 데이터 그리드의 헤더 행을 정의하는 클래스
+    }
+    
+    .dx-freespace-row {
+        // 자유 공간 행을 정의하는 클래스
+    }
+    
+    .dx-state-invisible {
+        // 요소가 보이지 않도록 설정하는 클래스
+    }
+        
+    .dx-datagrid-rowsview {
+        // overflow-y: auto;
+        
+        // &::-webkit-scrollbar {
+        //     width: 6px;
+        // }
+
+        // &::-webkit-scrollbar-track {
+        //     display: none;
+        //     background: transparent;
+        // }
+    }
+
+    .dx-scrollable-container{
+        overflow-y: auto;
+        
+        &::-webkit-scrollbar {
+            width: 6px;  // 스크롤바 너비 설정
+        }
+
+        &::-webkit-scrollbar-track {
+            display: none;  // 트랙만 숨기기
+            background: transparent;
+        }
+        
+        &::-webkit-scrollbar-thumb {
+            background: rgba(0, 0, 0, 0.2);  // 썸은 보이게 유지
+            border-radius: 3px;  // 썸 모서리 둥글게
+        }
+        
+        /* Firefox */
+        scrollbar-width: thin;
+        scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+    }
+}
+
+
+
+
+.dx-datagrid-rowsview,  .dx-header-row > td, .dx-datagrid-header-panel {
+    border: none !important;
+    // background-color: #222;
+}
+
+.dark{
+    td {color: white !important;}
+
+    .dx-datagrid {
+        border-bottom: 1px solid #99999944 !important;  // 다크모드 테이블 하단 선
+    }
+    .dx-datagrid-headers{
+        border-bottom: 1.5px solid #999999 !important;
+    }
+    .dx-datagrid-rowsview{
+        .dx-data-row {
+            border: none !important;
+            
+            td{ border-bottom: 1px solid #99999944 !important;}
+            &:nth-last-child(2) td { border-bottom: none !important;}
+        }
+    }
+}
+
+.light{
+    td {color: #222 !important;}
+    .dx-datagrid {
+        border-bottom: 1px solid #39393944 !important;  // 라이트모드 테이블 하단 선
+    }
+    .dx-datagrid-headers{
+        border-bottom: 1.5px solid #444 !important;
+    }
+
+    .dx-datagrid-rowsview{
+        .dx-data-row {
+            border: none !important;
+    
+            td{ border-bottom: 1px solid #39393944 !important;}
+            &:nth-last-child(2) td { border-bottom: none !important;}
+        }
+    }
+}
+
+.dx-datagrid-headers{
+    .underline{
+        border-bottom: 1px solid #666 !important;
+    }
+}
+
+
+.header-cell{
+    display: flex; align-items: center;
+    .header-cell-btn{
+        width: 20px; height: 20px;   
+        img{
+            border: none !important;
+        } 
+    }
+}
+
+// 라이트 모드 스크롤바
+.light {
+    .dx-datagrid-rowsview {
+        &::-webkit-scrollbar-thumb {
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 3px;
+        }
+        
+        
+    }
+    .dx-scrollable-container{
+        /* Firefox */
+        scrollbar-width: thin;
+        scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+    }
+}
+
+// 다크 모드 스크롤바
+.dark {
+    .dx-datagrid-rowsview {
+        &::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 3px;
+        }
+        
+    }
+    .dx-scrollable-container{
+        /* Firefox */
+        scrollbar-width: thin;
+        scrollbar-color: rgba(255, 255, 255, 0.4) transparent;
+    }
+}
+
+    .have-event{
+    cursor: pointer;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+// 애니메이션 및 특수 셀 스타일
+@keyframes blink-warning {
+    0%   { opacity: 1; }
+    70%  { opacity: 0.1; } // 70% 동안 서서히 꺼짐
+    100% { opacity: 1; }   // 30% 동안 빠르게 켜짐
+}
+
+@keyframes blink-critical {
+    0%   { opacity: 1; }
+    70%  { opacity: 0.1; }
+    100% { opacity: 1; }
+}
+
+.cell-warning {
+    color: #f59e0b !important;
+    font-weight: 600;
+    animation: blink-warning 2s linear infinite;
+}
+
+.cell-critical {
+    color: #ef4444 !important;
+    font-weight: 600;
+    animation: blink-critical 1s linear infinite;
+}
+
+.cell-icon-up {
+    color: #22c55e !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cell-icon-down {
+    color: #ef4444 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+// 링크가 있는 로우 스타일링 (:has() 선택자 방식)
+.custom-data-grid {
+    .dx-data-row:has([data-has-link="true"]) {
+        position: relative;
+        cursor: pointer;
+    }
+}
+
+// 라이트 모드에서의 링크 로우 호버 스타일
+.light .custom-data-grid {
+    .dx-data-row:has([data-has-link="true"]) {
+        &:hover {
+            background-color: rgba(0, 123, 255, 0.08) !important;
+            
+            td {
+                color: #0066cc !important;
+            }
+        }
+    }
+}
+
+// 다크 모드에서의 링크 로우 호버 스타일
+.dark .custom-data-grid {
+    .dx-data-row:has([data-has-link="true"]) {
+        &:hover {
+            background-color: rgba(200, 200, 200, 0.15) !important;
+            
+            td {
+                color: #e0e0e0 !important;
+            }
+        }
+    }
+}
+

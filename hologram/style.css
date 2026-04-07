@@ -1,0 +1,60 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+	background: #f3f4fa;
+	/* color: rgb(255, 255, 255); */
+
+	/* background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%); */
+}
+
+
+#myearth {
+	width: 100%;
+	height: 100vh;
+	max-height: 100vw;
+	overflow: hidden;
+
+	opacity: 0;
+	transition: opacity 1.5s ease-in;
+}
+
+#myearth.earth-ready {
+	opacity: 1;
+}
+
+#myearth::before {
+	content: none;
+}
+
+
+/* background glow */
+
+
+#test {
+	width: 50%;
+	height: 300px;
+	
+	background: rgb(34,193,195);
+background: linear-gradient(322deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+}
+
+#glow {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	max-width: 114vh;
+	height: 100vh;
+	max-height: 100vw;
+	transform: translate(-42%, -55%);
+
+	/* background: rgb(41, 38, 38); */
+	background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(243,244,250,1) 50%, rgba(243,244,250,1) 68%, rgba(255,255,255,1) 68%, rgba(255,255,255,1) 73%, rgba(243,244,250,1) 73%);
+}
+
+	.st0{opacity:0.01;}
+	.st1{fill:RGBA(176, 207, 245,0.2);
+	stroke:RGBA(176, 207, 245,0.9);
+	stroke-width:0.6;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:RGBA(33, 23, 254, 1);stroke-width:0.1;stroke-miterlimit:10;}
