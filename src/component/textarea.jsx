@@ -9,7 +9,7 @@ import createToolbarPlugin from '@draft-js-plugins/static-toolbar';
 
 
 
-import { shared } from '../state.jsx';
+import { shared } from '../state';
 import { stageCol, cellHeight } from '../ref/stage-setting';
 
 const staticToolbarPlugin = createToolbarPlugin();

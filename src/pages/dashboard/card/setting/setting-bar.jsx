@@ -33,7 +33,7 @@ import {
 	filterIcon,
 	selectIcon,
 	paramIcon,
-} from "../../../../ref/icons.jsx";
+} from "../../../../ref/icons";
 
 import { Editor, EditorState, RichUtils, Modifier } from 'draft-js'
 import createToolbarPlugin from '@draft-js-plugins/static-toolbar';
@@ -45,7 +45,7 @@ import { useMainSetting } from '../../../../hook/useMainSetting';
 import { _color_picker_ } from '../../../../styles/stage-style';
 import { colorList1, color4TextKeyLight, color4TextKeyDark } from '../../../../ref/color';
 
-import {SettingsInput,SettingSelect,MarkButton, SettingButton,SettingButton4Text, SettingButton4BorderColor, SettingButton4BackgroundColor, MarkButtonOnOff} from './setting-btn.jsx';
+import {SettingsInput,SettingSelect,MarkButton, SettingButton,SettingButton4Text, SettingButton4BorderColor, SettingButton4BackgroundColor, MarkButtonOnOff} from './setting-btn';
 import { MarkButton4TextFiled, BlockButton4TextFiled, toggleBlock, toggleMark, isBlockActive } from './editor-btn';
 
 import {dataTypes4component, intervalList, divLineWidthList} from './setting-const';
